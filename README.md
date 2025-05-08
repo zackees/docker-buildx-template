@@ -1,6 +1,6 @@
 # docker-buildx-template
 
-
+```yml
 name: Build Docker Image
 
 permissions:
@@ -63,4 +63,4 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
-
+```
